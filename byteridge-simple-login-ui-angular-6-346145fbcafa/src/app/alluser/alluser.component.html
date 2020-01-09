@@ -1,0 +1,19 @@
+<caption>AllUsers</caption>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">UserName</th>
+        <th scope="col">firstName</th>
+        <th scope="col">lastName</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let auditor of Auditor">
+        <th scope="row">1</th>
+        <td>{{auditor.username}}</td>
+        <td>{{auditor.firstName}}</td>
+        <td>{{auditor.lastName}}</td>
+      </tr>
+      </tbody>
+      </table>
+      <a [routerLink]="['/login']" class="btn btn-link">Cancle</a>
